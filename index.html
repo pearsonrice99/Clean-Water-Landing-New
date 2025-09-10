@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water</title>
+  <style>
+    /* General resets */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #222;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f28b50; /* peach hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      align-items: center;
+      background: #fafafa;
+      position: relative;
+    }
+
+    .hero-text h2 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #222;
+    }
+
+    .hero-text p {
+      margin-bottom: 2.5rem;
+      color: #555;
+      font-size: 1.1rem;
+      max-width: 90%;
+    }
+
+    .donate-btn {
+      background: linear-gradient(135deg, #ff7b36, #f9a13e);
+      color: #fff;
+      border: none;
+      padding: 1.2rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .donate-btn:hover {
+      background: linear-gradient(135deg, #e66b2f, #f18f2f);
+      transform: scale(1.08);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* Image grid */
+    .hero-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1rem;
+    }
+
+    .hero-images img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    .hero-images .large {
+      grid-column: 1 / span 2;
+    }
+
+    /* Decorative starbursts */
+    .starburst {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #f28b50;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      opacity: 0.7;
+    }
+
+    .starburst.one {
+      top: 10%;
+      left: 45%;
+    }
+
+    .starburst.two {
+      bottom: 15%;
+      right: 10%;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-text p {
+        max-width: 100%;
+        margin: 0 auto 2rem auto;
+      }
+      .hero-images {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* Underline for subheadline */
+.subheadline {
+  display: inline-block;
+  border-bottom: 3px solid #f28b50;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: #f28b50;
+  font-weight: bold;
+  padding-bottom: 0.2em;
+}
+  </style> 
+  
+</head>
+<body>
+  <header>
+    <h1>Charity: Water</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Bringing Clean Water—and Hope—to Every Community</h2>
+      <p class="subheadline">Together, we can end the water crisis—one donation at a time.</p>
+      <p>
+        Unlike traditional charities, our mission isn't just about providing water,
+        it's about empowering others to do the same. We have a very transparent take on 
+        where your contribution goes, giving donors an impact reporting showing photos 
+        of our work, who we served, and how we helped.
+      </p>
+      <button class="donate-btn">Donate Today</button>
+    </div>
+
+     <div class="hero-images">
+      <img src="images/Screenshot 2025-09-08 200116.png" alt="Main project photo" class="large">
+      <img src="images/Screenshot 2025-09-08 200038.png" alt="Impact photo 1">
+      <img src="images/Screenshot 2025-09-08 200154.png" alt="Impact photo 2">
+    </div>
+
+    <!-- Decorative starbursts -->
+    <div class="starburst one"></div>
+    <div class="starburst two"></div>
+  </section>
+</body>
+</html>
+
